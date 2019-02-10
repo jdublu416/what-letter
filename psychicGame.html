@@ -5,30 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Guess What!?</title>
   </head>
-  <body>
+  <body id="content">
     <header id="header">
       <h1>Guess What?</h1>
-      <h2>a psychic game for all ages!</h2>
+      <h3>A psychic game for all ages!</h3>
     </header>
     <main id="main">
       <h3>What letter am I thinking of?</h3>
-      <h3 id="taunt">Enter my letter...press down on the correct key...You got this!</h3>
-      <!-- <label>Enter the letter!</label>
-      <input
-        id="userInput"
-        type="text"
-        size="1"
-        autofocus
-        required
-        onkeydown="handleGuess()"
-      /> -->
+      <h3 id="taunt">
+        Enter my letter...press down on the correct key...You got this!
+      </h3>
       <h3 id="resultReply"></h3>
     </main>
-    <aside>
+    <aside id="stats">
       <h2 id="wins">Wins:</h2>
-      <h2 id="loss">Losses: </h2>
+      <h2 id="loss">Losses:</h2>
       <h2 id="displayGuess">Guessed Letters:</h2>
     </aside>
     <script src="app.js"></script>

@@ -47,7 +47,7 @@ document.onkeyup = function(event) {
   guess = String.fromCharCode(event.which).toLowerCase();
   guessedLetters.push(guess);
   document.getElementById("displayGuess").innerHTML =
-    "Guess Letters: " + guessedLetters.join(",");
+    "Guess Letters: <br/> " + guessedLetters.join(",");
     resetColor();
   checkLetter();
 };

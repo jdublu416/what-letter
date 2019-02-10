@@ -1,17 +1,52 @@
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
     text-align: center;
-    background-image: url(images/fog_0.jpg);
+    background-image: url(images/7JyC.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    color:lightblue;
+    color:rgba(5, 5, 5, 0.76);
+    
+    
 }
-
+#content{
+    display:grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: minmax(50px,auto);
+    grid-gap: 0px;
+    grid-template-areas:"header header header header header header"
+                        "aside aside main main main main"
+                        "aside aside main main main main"
+                        "aside aside main main main main";
+}
 header{
     /* background-color: #8797A4; */
-    color: #8797A4;
+    color: rgba(10, 10, 10, 0.944);
     padding: 15px;
+    background-color: rgba(62, 66, 64, 0.711);
+    grid-area: header;
+    
+    
 
+
+}
+
+aside {
+    grid-area: aside;
+    text-align: left;
+    font-size: .70em;
+    margin-left: 50px;
+   
+    
+    
+}
+
+main{
+    grid-area: main;
+    text-align: left;
+    font-size: 0.8em;
+    
 }
 
 .wrongAnswer{
@@ -25,3 +60,4 @@ header{
 .resetColor{
     color: lightblue;
 }
+/* h3{ } */
