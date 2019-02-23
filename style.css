@@ -1,63 +1,61 @@
-body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8em;
-    text-align: center;
-    background-image: url(images/7JyC.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:rgba(5, 5, 5, 0.76);
-    
-    
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8em;
+  text-align: center;
+  background-image: url(images/fog_0.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(219, 217, 243, 0.877);
 }
-#content{
-    display:grid;
-    margin: 0 auto;
-    grid-template-columns: repeat(6,1fr);
-    grid-auto-rows: minmax(50px,auto);
-    grid-gap: 0px;
-    grid-template-areas:"header header header header header header"
-                        "aside aside main main main main"
-                        "aside aside main main main main"
-                        "aside aside main main main main";
+#content {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap: 0px;
+  grid-template-areas:
+    "header header header header header header"
+    "aside aside main main main main"
+    "aside aside main main main main"
+    "aside aside main main main main";
 }
-header{
-    /* background-color: #8797A4; */
-    color: rgba(10, 10, 10, 0.944);
-    padding: 15px;
-    /* background-color: rgba(62, 66, 64, 0.711); */
-    grid-area: header;
-    
-    
-
-
+header {
+  /* background-color: #8797A4; */
+  color: rgba(221, 209, 209, 0.944);
+  padding: 15px;
+  margin-bottom: 15px;
+   
+  grid-area: header;
 }
 
 aside {
-    grid-area: aside;
-    text-align: left;
-    font-size: .70em;
-    margin-left: 50px;
-   
-    
-    
+  grid-area: aside;
+  text-align: left;
+  font-size: 0.7em;
+  margin-left: 50px;
+  color: rgb(50, 54, 54);
+  
+}
+.asdtxt {
+    text-shadow: 1px 1px rgb(115, 212, 18);
 }
 
-main{
-    grid-area: main;
-    text-align: left;
-    font-size: 0.8em;
-    
+main {
+  grid-area: main;
+  text-align: left;
+  font-size: 0.8em;
+  /* text-shadow: 1px 1px rgb(115, 212, 18); */
 }
 
-.wrongAnswer{
-    color: red;
-} 
+.wrongAnswer {
+  color: red;
+}
 
 .rightAnswer {
-    color: green;
+  color: chartreuse;
 }
 
-.resetColor{
-    color: lightblue;
+.resetColor {
+  color: rgb(173, 216, 230);
 }
-/* h3{ } */
+
