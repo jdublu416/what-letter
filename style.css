@@ -24,7 +24,7 @@ header{
     /* background-color: #8797A4; */
     color: rgba(10, 10, 10, 0.944);
     padding: 15px;
-    background-color: rgba(62, 66, 64, 0.711);
+    /* background-color: rgba(62, 66, 64, 0.711); */
     grid-area: header;
     
     
